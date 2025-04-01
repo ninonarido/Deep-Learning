@@ -1,5 +1,6 @@
 # Deep-Learning
-## is a subset of machine learning, which is itself a branch of artificial intelligence (AI). It involves the use of neural networks with many layers (hence "deep") that can learn from large amounts of data. Deep learning models are designed to automatically extract features and intricate patterns from data through a process known as training.
+
+is a subset of machine learning, which is itself a branch of artificial intelligence (AI). It involves the use of neural networks with many layers (hence "deep") that can learn from large amounts of data. Deep learning models are designed to automatically extract features and intricate patterns from data through a process known as training.
 
 ### Here are some key characteristics and concepts associated with deep learning:
 
