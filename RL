@@ -1,0 +1,25 @@
+# RLAIF vs RLHF
+
+Replace Human Feedback with AI Feedback? 
+
+Google DeepMind released a paper called “RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback” to compare RLHF to RLAIF on text summarization to evaluate if AI-generated feedback (RLAIF) can replace Human Feedback (RLHF) for LLM alignment. 
+
+🤖 RLAIF Implementations
+1️⃣ Started from the TL;DR summarization dataset based on Reddit posts.
+2️⃣ Used PaLM2 (already RLHFed) to assign a preference label for a text and two candidate summaries. Used the log probabilities for the candidates as scores. To mitigate positional bias, the made two generations with reversed order.
+3️⃣ Trained base SFT Model on a smaller dataset
+4️⃣ Trained a Reward Model (RM) initialized from the SFT on AI preferences with a contrastive loss for 3 epochs
+5️⃣ Fine-tuned a policy with reinforcement learning initialized from the SFT for 1 million episodes or 8 epochs
+
+✨ 𝗜𝗻𝘀𝗶𝗴𝗵𝘁𝘀:
+⚖️ Humans equally prefer RLAIF and RLHF summaries over SFT ~70% of the time.
+🥊 High-quality human/ai labels are key for scaling up RLHF
+📈 Prompting techniques such as CoT and larger LLM improve AI feedback.
+📍 Found evidence for positional bias, tried to mitigate by switching the order
+🤔 Used PaLM 2 (already RLHFed) for labeling preferences
+💬 RLAIF and RLHF policies tend to generate longer summaries than the SFT policy
+🥿 AI RM quickly plateaus after a few thousand examples, and HF RM continues to improve with more data
+🧐 Comparison SFT model was trained only for a single epoch
+🔍 Observed is that RLAIF appears less likely to hallucinate than RLHF
+
+Full paper: https://arxiv.org/abs/2309.00267
