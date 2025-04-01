@@ -48,8 +48,7 @@ Google DeepMind released a paper called “RLAIF: Scaling Reinforcement Learning
 🧐 Comparison SFT model was trained only for a single epoch
 🔍 Observed is that RLAIF appears less likely to hallucinate than RLHF
 
-Full paper: https://arxiv.org/abs/2309.00267
-
-
+Reference
+[1]  https://arxiv.org/abs/2309.00267v3
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
