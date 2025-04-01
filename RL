@@ -1,3 +1,29 @@
+# Deep Reinforcement Learning (Deep RL) 
+- combines Reinforcement Learning (RL) and Deep Learning, enabling agents to learn complex decision-making strategies from raw, unstructured data, such as images, without manual feature engineering. 
+
+## Overview:
+•	Reinforcement Learning (RL): RL is a machine learning approach where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties for its actions, and iteratively optimizing its actions to maximize cumulative reward.      
+•	Deep Learning: Deep learning uses artificial neural networks with multiple layers to learn complex patterns from data.      
+•	Deep Reinforcement Learning (Deep RL): Deep RL leverages deep learning to represent and learn the value function or policy of an RL agent, allowing it to handle high-dimensional and complex environments.  
+    
+## Key Concepts in Deep RL:
+◦	Agent: The entity that interacts with the environment and makes decisions.  
+◦	Environment: The context in which the agent operates.  
+◦	State: The current situation or information the agent has about the environment.  
+◦	Action: The decision or step the agent takes.  
+◦	Reward: A signal indicating the desirability of a particular action or state.  
+◦	Policy: The strategy the agent uses to select actions.  
+◦	Value Function: A function that estimates the expected cumulative reward for a given state or state-action pair.  
+
+## Deep RL Algorithms:
+◦	Deep Q-Network (DQN): Uses a deep neural network to approximate the Q-function, which estimates the value of taking a specific action in a given state.  
+◦	Policy Gradient Methods: Directly learn the policy by optimizing the probability of taking certain actions.  
+◦	Actor-Critic Methods: Combine policy gradient and value function methods to improve learning efficiency. 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 # RLAIF vs RLHF
 
 Replace Human Feedback with AI Feedback? 
@@ -23,3 +49,7 @@ Google DeepMind released a paper called “RLAIF: Scaling Reinforcement Learning
 🔍 Observed is that RLAIF appears less likely to hallucinate than RLHF
 
 Full paper: https://arxiv.org/abs/2309.00267
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
